@@ -52,3 +52,11 @@ Here are things I need from you:
 - Referrals/Intros for job interviews.
 
 Meanwhile, I'll update my CV/LinkedIn and prepare a document of work done/in-progress in product as a holdover. 
+
+Here are things I think I should finish up:
+- [ ] Blog content audit
+- [ ] Main website audit
+- [ ] Marketing/sales funnel from website to dashboard
+- [ ] DIY campaign launching (for under RM 20k)
+  - [ ] Printing Partner
+  - [ ] Sticker Installer
