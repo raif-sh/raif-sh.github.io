@@ -19,7 +19,9 @@ Important Points:
 ### Target Companies
 
 - [ ] Lottiefiles
-- [ ] MindValley
+- [x] MindValley [pm] - https://careers.mindvalley.com/teams/product-management/product-manager
+- [ ] Supabase [Marketplace Lead] or [sm/community manager] - https://boards.greenhouse.io/supabase/jobs/4775849004 or https://boards.greenhouse.io/supabase/jobs/4777008004
+- [ ] Nobody [ux lead] - https://nobodystudios.com/job-description-design-ux-lead/
 
 
 ## Survival
@@ -40,11 +42,11 @@ Important Points:
 
 I've taken some time to think about what we discussed.
 
-It would be best to apply to all possible opportunities and attempt interviews even at lottiefiles. As you guys also emphasized I need to focus on getting a work visa + good salary to improve the situation.
+It would be best to apply to all possible opportunities and attempt interviews even at lottiefiles. Like you guys also emphasized, I need to focus first on getting a work visa + good salary to improve the situation.
 
 Since, my salary on paper was RM 5,000 here, I figured a jump to RM 8,000+ should be a good starting point? 
 
-I've decided to continue our arrangement; I'll transfer atleast RM 2,000 from my salary. I want to help out with the debts, pending payments and/or help save some rainy day fund.
+I've decided to continue our arrangement; I'll transfer atleast RM 2,000 from my salary. I want to help out with the debts, pending payments and/or just save for a rainy day.
 
 Here are things I need from you:
 - Deliverables you want me to complete in this period.
@@ -54,9 +56,14 @@ Here are things I need from you:
 Meanwhile, I'll update my CV/LinkedIn and prepare a document of work done/in-progress in product as a holdover. 
 
 Here are things I think I should finish up:
+(Let me know )
 - [ ] Blog content audit
-- [ ] Main website audit
-- [ ] Marketing/sales funnel from website to dashboard
-- [ ] DIY campaign launching (for under RM 20k)
+- [ ] Finish campaign reports for Y2022
+- [ ] Optimize main (WP) website for marketing/sales funnel.
+  - [ ] Automatic quote generation
+  - [ ] 
+- [ ] DIY campaign launching (for under RM 20k) in client dashboard
   - [ ] Printing Partner
   - [ ] Sticker Installer
+- [ ] Follow up with Aiman/Maadhih to publish/fix flutter mobile app issues.
+- [ ] Producter integration with website
