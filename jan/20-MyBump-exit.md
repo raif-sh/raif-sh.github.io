@@ -16,14 +16,6 @@ Important Points:
 - [ ] Update personal website & get domain?
 - [ ] Update LinkedIn: https://twitter.com/adplist/status/1616467723873308673?s=46&t=sL2SfV57WXwqhZ4eLSgiow
 
-### Target Companies
-
-- [ ] Lottiefiles
-- [x] MindValley [pm] - https://careers.mindvalley.com/teams/product-management/product-manager
-- [ ] Supabase [Marketplace Lead] or [sm/community manager] - https://boards.greenhouse.io/supabase/jobs/4775849004 or https://boards.greenhouse.io/supabase/jobs/4777008004
-- [ ] Nobody [ux lead] - https://nobodystudios.com/job-description-design-ux-lead/
-
-
 ## Survival
 
 **Total: RM 5,730**
