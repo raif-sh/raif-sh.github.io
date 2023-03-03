@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Raif Home</title>
     <link href="/style.css" rel="stylesheet">
-
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- <link rel="stylesheet" href="/assets/css/bulma.css"> -->
   </head>
   <body>
@@ -32,7 +33,7 @@
             </div>
           <div class="mb-8 flex justify-center">
             <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Looking for a full-time role. 
+                Looking for a full-time product role. 
                 <a target="_blank" href="https://drive.google.com/file/d/1IJtWtKiUPHQvN8USzSxUhEeb_-31erC2/view?usp=sharing" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Resume<span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
@@ -49,21 +50,49 @@
             </p> -->
           </div>
           <div class="relative mx-auto max-w-lg lg:max-w-7xl">
-            <div class="mt-8">
-              <h2 class="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">About me</h2>
-              <div class="mt-2 space-y-4 flex flex-col leading-8">
-                <p>Born 1994</p>
-                <p>From Maldives</p>
+            <div class="flex flex-col mt-8 py-2 px-3 rounded-lg border border-gray-400" x-data="{ bio: false }">
+              <button class="text-lg font-semibold tracking-tight text-gray-700 sm:text-2xl" x-on:click="bio = !bio">About me</button>
+              <div class="mt-2 space-y-4 flex flex-col text-center leading-8 text-gray-600" x-show="bio">
+                <p>Born 1994 👶</p>
+                <p>From Maldives 🌴</p>
                 <p>Based in Malaysia 🇲🇾</p>
-                <p>Managing chronic eczema</p>
-                <p>Introverted (most of the time)</p>
-                <p>Commerce and marketing by education</p>
-                <p>Design and tech by curiousity and passion</p>
-                <p>Cat Person @ <a class="underline hover:font-bold" href="https://pawreo.com/">Pawreo</a> (Fun and education content)</p>
+                <p>Console & PC Gamer 🎮</p>
+                <p>Healthy eating and lifestyle 🧘</p>
+                <p>Introverted (most of the time) 👓</p>
+                <p>Commerce and marketing by education 💸</p>
+                <p>Design and tech by curiousity and passion 🖼️</p>
+                <!-- <p>Cat Person @ <a class="underline hover:font-bold" href="https://pawreo.com/">Pawreo</a> (Fun and education content)</p> -->
               </div>
             </div>
-            <div class="mt-6">
-              <button class="py-2 px-3 rounded-lg border-2">Hashnode Blog</button>
+            <div class="flex flex-col mt-8 py-2 px-3 rounded-lg border border-gray-400" x-data="{ social: true }">
+              <button class="text-lg font-semibold tracking-tight text-gray-700 sm:text-2xl" x-on:click="social = !social">Socials</button>
+              <div class="mt-2 space-y-4 flex flex-col leading-8 text-gray-600" x-show="social">
+                <div class="py-4 border-b">
+                  <a class="flex flex-row items-center" href="https://www.linkedin.com/in/raifsh/" target="_blank">
+                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_atjsyyed.json"  background="transparent"  speed="1"  style="width: 48px; height: 48px;"  loop hover ></lottie-player>
+                    <subtitle class="text-gray-500">Sharing about design, marketing and tech</subtitle>
+                  </a>
+                </div>
+                <div class="py-4 border-b">
+                  <a class="flex flex-row items-center" href="https://twitter.com/RaifShareef_" target="_blank">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hdy0htc2.json"  background="transparent"  speed="1"  style="width: 48px; height: 48px;" hover loop  ></lottie-player>
+                    <subtitle class="text-gray-500">WIP updates, rants and sometimes game screenshots</subtitle>
+                  </a>
+                </div>
+                <div class="py-4 border-b">
+                  <a class="flex flex-row items-center" href="https://github.com/raif-sh/" target="_blank">
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_cwqf5i6h.json"  background="transparent"  speed="1"  style="width: 48px; height: 48px;" hover loop  ></lottie-player>
+                    <subtitle class="text-gray-500">Not much here yet T.T</subtitle>
+                  </a>
+                </div>
+                <div class="py-4 border-b">
+                  <a class="flex flex-row items-center" href="https://raif.hashnode.dev/" target="_blank">
+                    <img class="w-8 h-8 ml-2 mr-2" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1611902473383/CDyAuTy75.png?auto=compress" alt="">
+                    <subtitle class="text-gray-500">Writing about learnings in development and design</subtitle>
+                  </a>
+                </div>
+                <!-- <p>Cat Person @ <a class="underline hover:font-bold" href="https://pawreo.com/">Pawreo</a> (Fun and education content)</p> -->
+              </div>
             </div>
           </div>
         </div>
@@ -94,6 +123,7 @@
             <!-- Adv start -->
             <div>
                 <div>
+                  <img src="https://mybump.my/wp-content/uploads/2021/04/home__dashboard-1024x697.png" alt="">
                     <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">Design & Development</span>
                 </div>
                 <a href="/mybump-advertiser-dashboard" class="mt-4 block">
@@ -105,7 +135,7 @@
                     <div class="flex space-x-1 text-sm text-gray-500">
                         <span>2020 - 2022</span>
                         <span aria-hidden="true">&middot;</span>
-                        <span>6 min read</span>
+                        <span>Reach out for a product demo</span>
                     </div>
                     </div>
                 </div>
@@ -114,6 +144,7 @@
             <!-- Adv start -->
             <div>
                 <div>
+                  <img src="https://mybump.my/wp-content/uploads/2022/09/Brand-Ambassador-Hero-Image-MyBump-Media.png" alt="">
                     <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">Product Management</span>
                 </div>
                 <a href="/mybump-advertiser-dashboard" class="mt-4 block">
@@ -123,9 +154,9 @@
                 <div class="mt-6 flex items-center">
                     <div class="">
                     <div class="flex space-x-1 text-sm text-gray-500">
-                        <span>2022</span>
+                        <span>2022 - 2023</span>
                         <span aria-hidden="true">&middot;</span>
-                        <span>6 min read</span>
+                        <span>Android is live</span>
                     </div>
                     </div>
                 </div>
