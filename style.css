@@ -690,16 +690,6 @@ video {
   margin-right: auto;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -724,8 +714,12 @@ video {
   margin-top: 0.5rem;
 }
 
-.mr-3 {
-  margin-right: 0.75rem;
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mt-3 {
@@ -738,26 +732,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .box-border {
@@ -860,20 +834,12 @@ video {
   height: 4rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .h-8 {
   height: 2rem;
 }
 
 .w-16 {
   width: 4rem;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .w-8 {
@@ -1702,10 +1668,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1760,16 +1722,16 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-t {
   border-top-width: 1px;
 }
 
 .border-r {
   border-right-width: 1px;
-}
-
-.border-b {
-  border-bottom-width: 1px;
 }
 
 .border-l {
@@ -1813,11 +1775,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-indigo-100 {
@@ -1940,10 +1897,6 @@ video {
      object-fit: scale-down;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1969,6 +1922,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
@@ -1977,11 +1935,6 @@ video {
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pt-16 {
@@ -2216,11 +2169,6 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2553,10 +2501,6 @@ video {
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\] {
   --tw-content: 'this-is-also-valid]-weirdly-enough';
   content: var(--tw-content);
-}
-
-.hover\:border:hover {
-  border-width: 1px;
 }
 
 .hover\:font-bold:hover {
