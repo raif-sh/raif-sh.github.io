@@ -1,4 +1,4 @@
-# 22
+## 22
 
 learning and practicing basic JS string methods and manipulation. learnt about new stuff that was released in 2022 like `at(i)` which can select a character at certain index and `replace(x,y)` which can replace keywords easily.
 
@@ -25,3 +25,10 @@ Read this article on [problem solving by learning how to think like a programmer
 It stated the process we usually fall into trying random things instead of having a framework and practicing a healthy approach to problem solving. Its interesting to learn that what makes the difference between good and bad programmers are one is curious and the other gets irritated by bugs or problems.
 
 In programming failure is a good thing and one should expect this every minute.
+
+There are three stages in the process of problem solving; starting with understanding the problem
+1. plan - don't start coding or open computer, do this on paper first. 
+2.  Pseudocode - write in plain language, the logic for the program 
+3.  Divide and conquer - break main problem to sub problems and start solving small
+
+Read the first chapter from the book `Think like a programmer by V. Anton Spraul` - I finally learned how to play sudoku and learnt alot more about approaching with a plan to solve problems without trying random things.
