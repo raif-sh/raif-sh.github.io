@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-5-year.css">
+    <title>5 Year Anniversary</title>
+</head>
+<body>
+    <div class="codec-container">
+        <div class="codec-header">
+            <div class="codec-title">CODEC</div>
+            <div class="codec-frequency">140.85</div>
+        </div>
+        <div class="codec-content">
+            <div class="profile">
+                <div class="profile-pic" id="left-pic">RAIF</div>
+                <div class="profile-name" id="left-name">HUSBAND</div>
+            </div>
+            <div class="conversation">
+                <div class="dialog">
+                    <div class="static-effect"></div>
+                    <div class="scan-line"></div>
+                    
+                    <div class="message" data-index="0">
+                        <div class="speaker">RAIF:</div>
+                        <div class="text">Hello? Are you there?</div>
+                    </div>
+                    
+                    <div class="message" data-index="1">
+                        <div class="speaker">LESIA:</div>
+                        <div class="text">I'm here. What's going on? Is everything okay?</div>
+                    </div>
+                    
+                    <div class="message" data-index="2">
+                        <div class="speaker">RAIF:</div>
+                        <div class="text">Everything's perfect. Do you know what today is?</div>
+                    </div>
+                    
+                    <div class="message" data-index="3">
+                        <div class="speaker">LESIA:</div>
+                        <div class="text">Of course I do. It's our 5-year anniversary!</div>
+                    </div>
+                    
+                    <div class="message" data-index="4">
+                        <div class="speaker">RAIF:</div>
+                        <div class="text">That's right. 5 years of being on this mission together...</div>
+                    </div>
+                    
+                    <div class="message" data-index="5">
+                        <div class="speaker">LESIA:</div>
+                        <div class="text">The best mission I've ever been on. Though sometimes I think you take this Metal Gear stuff too seriously!</div>
+                    </div>
+                    
+                    <div class="message" data-index="6">
+                        <div class="speaker">RAIF:</div>
+                        <div class="text">I've prepared a special message for you. For our 5 years together.</div>
+                    </div>
+                    
+                    <div class="message" data-index="7">
+                        <div class="speaker">LESIA:</div>
+                        <div class="text">Really? I can't wait to hear it!</div>
+                    </div>
+                    
+                    <div class="message" data-index="8">
+                        <div class="speaker">RAIF:</div>
+                        <div class="text">Five years ago, we began this adventure together, and every day since has been the greatest mission of my life.</div>
+                    </div>
+                    
+                    <div class="message" data-index="9">
+                        <div class="speaker">RAIF:</div>
+                        <div class="text">Your love has been my strength through every challenge we've faced. We've grown so much during this time.</div>
+                    </div>
+                    
+                    <div class="message" data-index="10">
+                        <div class="speaker">RAIF:</div>
+                        <div class="text">I never knew what true happiness was until you came into my life. You've made these past 5 years the most beautiful chapter of my story.</div>
+                    </div>
+                    
+                    <div class="message" data-index="11">
+                        <div class="speaker">RAIF:</div>
+                        <div class="text">Through laughter and tears, through celebration and struggle, you've been my partner, my best friend, and my love.</div>
+                    </div>
+                    
+                    <div class="message" data-index="12">
+                        <div class="speaker">RAIF:</div>
+                        <div class="text">I promise to keep loving you more each day as we continue building our future together.</div>
+                    </div>
+                    
+                    <div class="message" data-index="13">
+                        <div class="speaker">RAIF:</div>
+                        <div class="text">Happy 5th anniversary, my love. Thank you for these incredible years. Here's to many, many more.</div>
+                    </div>
+                    
+                    <div class="message" data-index="14">
+                        <div class="speaker">LESIA:</div>
+                        <div class="text">...</div>
+                    </div>
+                    
+                    <div class="message" data-index="15">
+                        <div class="speaker">LESIA:</div>
+                        <div class="text">That was beautiful...</div>
+                    </div>
+                    
+                    <div class="message" data-index="16">
+                        <div class="speaker">LESIA:</div>
+                        <div class="text">I love you so much. These past 5 years have been the best of my life too.</div>
+                    </div>
+                    
+                    <div class="message" data-index="17">
+                        <div class="speaker">LESIA:</div>
+                        <div class="text">I can't wait to see what our next adventure brings. Happy anniversary, my love.  <span class="blink">_</span></div>
+                    </div>
+
+                </div>
+                <div class="controls">
+                    <button class="continue-btn" id="continue-btn">>>>></button>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profile-pic" id="right-pic">LESIA</div>
+                <div class="profile-name" id="right-name">WIFE</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const messages = document.querySelectorAll('.message');
+            const continueBtn = document.getElementById('continue-btn');
+            const leftPic = document.getElementById('left-pic');
+            const rightPic = document.getElementById('right-pic');
+            
+            let currentIndex = 0;
+            
+            continueBtn.addEventListener('click', () => {
+                if (currentIndex < messages.length - 1) {
+                    currentIndex++;
+                    
+                    // Hide all messages
+                    messages.forEach(msg => {
+                        msg.style.display = 'none';
+                    });
+                    
+                    // Show messages up to current index
+                    for (let i = 0; i <= currentIndex; i++) {
+                        messages[i].style.display = 'block';
+                    }
+                    
+                    // Scroll to bottom
+                    const dialog = document.querySelector('.dialog');
+                    dialog.scrollTop = dialog.scrollHeight;
+                    
+                    // Update active speaker highlight
+                    const currentMsg = messages[currentIndex];
+                    const speaker = currentMsg.querySelector('.speaker').textContent;
+                    
+                    if (speaker.startsWith('YOU')) {
+                        leftPic.style.border = '2px solid #0f0';
+                        rightPic.style.border = '2px solid #333';
+                    } else {
+                        leftPic.style.border = '2px solid #333';
+                        rightPic.style.border = '2px solid #0f0';
+                    }
+                }
+                
+                // Hide button if we've reached the end
+                if (currentIndex === messages.length - 1) {
+                    continueBtn.textContent = 'End Transmission';
+                    continueBtn.addEventListener('click', () => {
+                        continueBtn.classList.add('hidden');
+                    }, { once: true });
+                }
+            });
+            
+            // Initialize first speaker highlight
+            leftPic.style.border = '2px solid #0f0';
+            rightPic.style.border = '2px solid #333';
+        });
+    </script>
+</body>
+</html>
